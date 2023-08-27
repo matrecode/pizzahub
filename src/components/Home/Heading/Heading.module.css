@@ -1,0 +1,31 @@
+/* styles.module.css */
+.titleAroundSpan {
+    position: relative;
+    text-align: start;
+    padding: 0 0 0 4.5rem;
+    
+    
+    /* color: red; */
+  }
+  
+  .titleAroundSpan::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    /* background-color: red; */
+    background-color: rgb(210, 210, 210)
+  }
+  
+  .titleAroundSpan span {
+    position: relative;
+    z-index: 1;
+    padding: 0.62rem 1.25rem;
+    border-radius: 1.25rem;
+    background: white;
+    text-transform: uppercase;
+  }
+  
